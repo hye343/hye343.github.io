@@ -1,0 +1,14 @@
+# 상단 내비게이션 메뉴
+main:
+  - title: "소개"
+    url: /about/
+  - title: "비전"
+    url: /vision/
+  - title: "목표"
+    url: /goals/
+  - title: "전략"
+    url: /strategy/
+  - title: "계획"
+    url: /plans/
+  - title: "포트폴리오"
+    url: /portfolio/
