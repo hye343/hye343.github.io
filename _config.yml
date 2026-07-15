@@ -21,6 +21,7 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-paginate
+  - jekyll-include-cache
 
 # ==========================================
 # 작성자 정보 (사이드바에 표시됨)
