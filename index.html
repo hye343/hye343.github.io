@@ -38,15 +38,15 @@
 </header>
 
 <!-- ================= HERO (scrapbook corkboard) ================= -->
-<section class="hero grass-bg" id="hero">
+<section class="hero" id="hero">
 
-  <!-- scattered star stickers -->
-  <svg class="star" style="top:8%;left:6%;color:var(--yellow-deep);transform:rotate(-12deg);"><use href="#star-shape"/></svg>
-  <svg class="star" style="top:14%;right:9%;color:var(--blue-deep);width:44px;height:44px;transform:rotate(10deg);"><use href="#star-shape"/></svg>
-  <svg class="star" style="top:46%;left:3%;color:var(--pink-deep);width:26px;height:26px;transform:rotate(6deg);"><use href="#star-shape"/></svg>
-  <svg class="star" style="top:50%;right:4%;color:var(--mint-deep);transform:rotate(-8deg);"><use href="#star-shape"/></svg>
-  <svg class="star" style="bottom:6%;left:14%;color:var(--blue-deep);width:24px;height:24px;transform:rotate(16deg);"><use href="#star-shape"/></svg>
-  <svg class="star" style="bottom:8%;right:16%;color:var(--yellow-deep);width:30px;height:30px;transform:rotate(-16deg);"><use href="#star-shape"/></svg>
+  <!-- scattered star stickers (single muted accent tone) -->
+  <svg class="star" style="top:8%;left:6%;transform:rotate(-12deg);"><use href="#star-shape"/></svg>
+  <svg class="star" style="top:14%;right:9%;width:40px;height:40px;transform:rotate(10deg);"><use href="#star-shape"/></svg>
+  <svg class="star" style="top:46%;left:3%;width:24px;height:24px;transform:rotate(6deg);"><use href="#star-shape"/></svg>
+  <svg class="star" style="top:50%;right:4%;transform:rotate(-8deg);"><use href="#star-shape"/></svg>
+  <svg class="star" style="bottom:6%;left:14%;width:22px;height:22px;transform:rotate(16deg);"><use href="#star-shape"/></svg>
+  <svg class="star" style="bottom:8%;right:16%;width:26px;height:26px;transform:rotate(-16deg);"><use href="#star-shape"/></svg>
 
   <div class="hero__content reveal">
     <p class="hero__eyebrow">Hello, I'm</p> <!-- TODO -->
@@ -60,26 +60,26 @@
   <div class="corkboard reveal">
     <a href="#about" class="polaroid" style="transform:rotate(-6deg);">
       <span class="polaroid__num">1</span>
-      <span class="polaroid__pin" style="background:var(--pink-deep);"></span>
-      <span class="polaroid__photo" style="background:var(--pink);">🙋‍♀️</span>
+      <span class="polaroid__pin"></span>
+      <span class="polaroid__photo" style="background:var(--tint-1);">🙋‍♀️</span>
       <span class="polaroid__caption">인적사항</span>
     </a>
     <a href="#history" class="polaroid" style="transform:rotate(4deg);">
       <span class="polaroid__num">2</span>
-      <span class="polaroid__pin" style="background:var(--blue-deep);"></span>
-      <span class="polaroid__photo" style="background:var(--blue);">🗂️</span>
+      <span class="polaroid__pin"></span>
+      <span class="polaroid__photo" style="background:var(--tint-4);">🗂️</span>
       <span class="polaroid__caption">연혁</span>
     </a>
     <a href="#goals" class="polaroid" style="transform:rotate(-3deg);">
       <span class="polaroid__num">3</span>
-      <span class="polaroid__pin" style="background:var(--yellow-deep);"></span>
-      <span class="polaroid__photo" style="background:var(--yellow);">🎯</span>
+      <span class="polaroid__pin"></span>
+      <span class="polaroid__photo" style="background:var(--tint-3);">🎯</span>
       <span class="polaroid__caption">목표</span>
     </a>
     <a href="#portfolio" class="polaroid" style="transform:rotate(5deg);">
       <span class="polaroid__num">4</span>
-      <span class="polaroid__pin" style="background:var(--mint-deep);"></span>
-      <span class="polaroid__photo" style="background:var(--mint);">🏆</span>
+      <span class="polaroid__pin"></span>
+      <span class="polaroid__photo" style="background:var(--tint-2);">🏆</span>
       <span class="polaroid__caption">포트폴리오</span>
     </a>
   </div>
@@ -88,7 +88,7 @@
 </section>
 
 <!-- ================= 1. 인적사항 (ABOUT) ================= -->
-<section class="section section--mint dotted" id="about">
+<section class="section" id="about">
   <div class="section__inner">
     <p class="section__eyebrow reveal">01 · about</p>
     <h2 class="section__title reveal">인적사항</h2>
@@ -114,7 +114,7 @@
 </section>
 
 <!-- ================= 2. 연혁 (HISTORY) ================= -->
-<section class="section section--blue dotted" id="history">
+<section class="section section--alt" id="history">
   <div class="section__inner">
     <p class="section__eyebrow reveal">02 · history</p>
     <h2 class="section__title reveal">걸어온 길</h2>
@@ -142,7 +142,7 @@
 </section>
 
 <!-- ================= 3. 목표 (GOALS: 비전 · 목표 · 전략 · 계획) ================= -->
-<section class="section section--yellow dotted" id="goals">
+<section class="section" id="goals">
   <div class="section__inner">
     <p class="section__eyebrow reveal">03 · goals</p>
     <h2 class="section__title reveal">목표</h2>
@@ -230,7 +230,7 @@
 </section>
 
 <!-- ================= 4. 포트폴리오 (PORTFOLIO) ================= -->
-<section class="section section--pink dotted" id="portfolio">
+<section class="section section--alt" id="portfolio">
   <div class="section__inner">
     <p class="section__eyebrow reveal">04 · portfolio</p>
     <h2 class="section__title reveal">만들어온 것들</h2>
@@ -269,9 +269,9 @@
 </section>
 
 <!-- ================= CONTACT / FOOTER ================= -->
-<section class="contact dotted" id="contact">
-  <svg class="star" style="top:10%;left:10%;color:var(--pink-deep);"><use href="#star-shape"/></svg>
-  <svg class="star" style="top:14%;right:12%;color:var(--yellow-deep);width:26px;height:26px;"><use href="#star-shape"/></svg>
+<section class="contact" id="contact">
+  <svg class="star" style="top:10%;left:10%;"><use href="#star-shape"/></svg>
+  <svg class="star" style="top:14%;right:12%;width:24px;height:24px;"><use href="#star-shape"/></svg>
   <div class="contact__inner reveal">
     <p class="section__eyebrow">contact</p>
     <h2 class="contact__title">함께 이야기 나눠요</h2>
