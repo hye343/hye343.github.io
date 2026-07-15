@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>유혜린 | Portfolio</title> <!-- TODO: 이름/제목 수정 -->
+<meta name="description" content="유혜린의 인적사항, 연혁, 목표, 포트폴리오를 담은 개인 홈페이지"> <!-- TODO -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- ================= NAV ================= -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="#hero" class="nav__logo">HYERIN<span>.</span></a> <!-- TODO: 이니셜/로고 텍스트 -->
+    <nav class="nav__links" id="navLinks">
+      <a href="#about">인적사항</a>
+      <a href="#history">연혁</a>
+      <a href="#goals">목표</a>
+      <a href="#portfolio">포트폴리오</a>
+      <a href="#contact" class="nav__cta">연락하기</a>
+    </nav>
+    <button class="nav__toggle" id="navToggle" aria-label="메뉴 열기">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ================= HERO (hand illustration) ================= -->
+<section class="hero" id="hero">
+  <div class="hero__blob hero__blob--1"></div>
+  <div class="hero__blob hero__blob--2"></div>
+  <div class="hero__blob hero__blob--3"></div>
+
+  <div class="hero__content reveal">
+    <p class="hero__eyebrow">HELLO, I'M</p> <!-- TODO -->
+    <h1 class="hero__title">유혜린<span class="dot">.</span></h1> <!-- TODO -->
+    <p class="hero__subtitle">
+      한 줄로 나를 설명하는 캐치프레이즈를 여기에 적어주세요.<br>
+      아래 손 위 항목을 눌러 저에 대해 하나씩 살펴보세요.
+    </p> <!-- TODO -->
+  </div>
+
+  <div class="hand reveal">
+    <svg viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="handGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#7C3AED"/>
+          <stop offset="55%" stop-color="#EC4899"/>
+          <stop offset="100%" stop-color="#FB923C"/>
+        </linearGradient>
+      </defs>
+      <path class="hand__path" d="
+        M 96 372
+        C 82 372, 74 360, 72 338
+        C 70 312, 69 285, 67 262
+        C 66 246, 70 232, 80 229
+        C 90 226, 96 236, 97 250
+        C 99 266, 100 280, 101 262
+        C 100 226, 96 190, 93 160
+        C 91 138, 97 120, 112 118
+        C 125 116, 132 132, 132 150
+        C 133 174, 134 198, 135 218
+        C 136 232, 138 240, 141 228
+        C 144 200, 146 162, 148 132
+        C 149 108, 157 90, 172 90
+        C 186 90, 193 106, 192 128
+        C 190 152, 187 178, 185 200
+        C 184 214, 186 224, 191 214
+        C 199 192, 208 166, 217 145
+        C 225 126, 238 114, 251 120
+        C 262 125, 264 140, 257 155
+        C 246 177, 231 197, 220 215
+        C 213 226, 210 236, 217 244
+        C 229 257, 238 270, 240 288
+        C 242 308, 237 330, 226 348
+        C 214 366, 197 375, 178 376
+        C 152 378, 122 375, 96 372
+        Z" />
+    </svg>
+
+    <a href="#about" class="hotspot" style="left:87%; top:48%;">
+      <span class="hotspot__badge">1</span>
+      <span class="hotspot__label">인적사항</span>
+    </a>
+    <a href="#history" class="hotspot" style="left:23%; top:36%;">
+      <span class="hotspot__badge">2</span>
+      <span class="hotspot__label">연혁</span>
+    </a>
+    <a href="#goals" class="hotspot" style="left:50%; top:20%;">
+      <span class="hotspot__badge">3</span>
+      <span class="hotspot__label">목표</span>
+    </a>
+    <a href="#portfolio" class="hotspot hotspot--left" style="left:50%; top:74%;">
+      <span class="hotspot__badge">4</span>
+      <span class="hotspot__label">포트폴리오</span>
+    </a>
+  </div>
+
+  <a href="#about" class="hero__scroll" aria-label="아래로 스크롤">↓</a>
+</section>
+
+<!-- ================= 1. 인적사항 (ABOUT) ================= -->
+<section class="section" id="about">
+  <div class="section__inner">
+    <p class="section__eyebrow reveal">01 · ABOUT</p>
+    <h2 class="section__title reveal">인적사항</h2>
+
+    <div class="about__grid">
+      <div class="about__avatar reveal">
+        <div class="about__avatar-circle">HR</div> <!-- TODO: 사진으로 교체하려면 assets/images/profile.jpg 추가 후 이 div를 <img>로 교체 -->
+      </div>
+      <div class="about__text reveal">
+        <p class="about__intro">
+          TODO: 자기소개를 작성해주세요. (이름, 소속/전공, 관심 분야, 지금 하고 있는 일, 지향하는 방향 등을 2~3문단으로)
+        </p>
+        <div class="chips">
+          <!-- TODO: 강점/키워드를 자유롭게 추가·수정하세요 -->
+          <span class="chip">키워드 1</span>
+          <span class="chip">키워드 2</span>
+          <span class="chip">키워드 3</span>
+          <span class="chip">키워드 4</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 2. 연혁 (HISTORY) ================= -->
+<section class="section section--dark" id="history">
+  <div class="section__inner">
+    <p class="section__eyebrow reveal">02 · HISTORY</p>
+    <h2 class="section__title reveal">걸어온 길</h2>
+
+    <div class="timeline reveal">
+      <!-- TODO: 학력/경력/주요활동/공모전 이력 등을 시간순으로 추가하세요 -->
+      <div class="timeline__item">
+        <span class="timeline__year">20XX</span>
+        <span class="timeline__desc">경험/이력 내용을 적어주세요</span>
+      </div>
+      <div class="timeline__item">
+        <span class="timeline__year">20XX</span>
+        <span class="timeline__desc">경험/이력 내용을 적어주세요</span>
+      </div>
+      <div class="timeline__item">
+        <span class="timeline__year">20XX</span>
+        <span class="timeline__desc">경험/이력 내용을 적어주세요</span>
+      </div>
+      <div class="timeline__item">
+        <span class="timeline__year">20XX</span>
+        <span class="timeline__desc">경험/이력 내용을 적어주세요</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 3. 목표 (GOALS: 비전 · 목표 · 전략 · 계획) ================= -->
+<section class="section section--tint" id="goals">
+  <div class="section__inner">
+    <p class="section__eyebrow reveal">03 · GOALS</p>
+    <h2 class="section__title reveal">목표</h2>
+
+    <!-- 비전 -->
+    <div style="margin-bottom:64px;">
+      <p class="card__tag reveal">비전</p>
+      <blockquote class="reveal" style="font-size:clamp(20px,2.8vw,30px);font-weight:800;line-height:1.6;margin:14px 0 0;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;">
+        "TODO: 나는 궁극적으로 어떤 사람이 되고 싶은가, 어떤 가치를 세상에 남기고 싶은가를<br>
+        한두 문장의 선언문으로 적어주세요."
+      </blockquote>
+    </div>
+
+    <!-- 구체적 목표 -->
+    <div class="cards cards--3" style="margin-bottom:72px;">
+      <div class="card reveal">
+        <span class="card__tag">단기 (~1년)</span>
+        <h3 class="card__title">목표를 적어주세요</h3> <!-- TODO -->
+        <p class="card__desc">측정 지표와 기한을 함께 적으면 좋아요.</p>
+      </div>
+      <div class="card reveal">
+        <span class="card__tag">중기 (1~3년)</span>
+        <h3 class="card__title">목표를 적어주세요</h3> <!-- TODO -->
+        <p class="card__desc">측정 지표와 기한을 함께 적으면 좋아요.</p>
+      </div>
+      <div class="card reveal">
+        <span class="card__tag">장기 (3년~)</span>
+        <h3 class="card__title">목표를 적어주세요</h3> <!-- TODO -->
+        <p class="card__desc">측정 지표와 기한을 함께 적으면 좋아요.</p>
+      </div>
+    </div>
+
+    <!-- 전략 -->
+    <p class="section__eyebrow reveal" style="margin-bottom:8px;">전략</p>
+    <div class="steps" style="margin-bottom:72px;">
+      <div class="steps__item reveal">
+        <span class="steps__num">01</span>
+        <div>
+          <h3>전략 제목을 적어주세요</h3> <!-- TODO -->
+          <p>구체적인 실행 방법을 적어주세요.</p>
+        </div>
+      </div>
+      <div class="steps__item reveal">
+        <span class="steps__num">02</span>
+        <div>
+          <h3>전략 제목을 적어주세요</h3> <!-- TODO -->
+          <p>구체적인 실행 방법을 적어주세요.</p>
+        </div>
+      </div>
+      <div class="steps__item reveal">
+        <span class="steps__num">03</span>
+        <div>
+          <h3>전략 제목을 적어주세요</h3> <!-- TODO -->
+          <p>구체적인 실행 방법을 적어주세요.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 실행 계획 -->
+    <p class="section__eyebrow reveal" style="margin-bottom:8px;">실행 계획</p>
+    <div class="roadmap reveal">
+      <div class="roadmap__item">
+        <span class="roadmap__dot"></span>
+        <div>
+          <span class="roadmap__time">2026 하반기</span> <!-- TODO -->
+          <p>실행 항목을 적어주세요</p>
+        </div>
+      </div>
+      <div class="roadmap__item">
+        <span class="roadmap__dot"></span>
+        <div>
+          <span class="roadmap__time">2027</span> <!-- TODO -->
+          <p>실행 항목을 적어주세요</p>
+        </div>
+      </div>
+      <div class="roadmap__item">
+        <span class="roadmap__dot"></span>
+        <div>
+          <span class="roadmap__time">2028 이후</span> <!-- TODO -->
+          <p>실행 항목을 적어주세요</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 4. 포트폴리오 (PORTFOLIO) ================= -->
+<section class="section section--dark" id="portfolio">
+  <div class="section__inner">
+    <p class="section__eyebrow reveal">04 · PORTFOLIO</p>
+    <h2 class="section__title reveal">만들어온 것들</h2>
+
+    <div class="cards cards--3">
+      <!-- TODO: 카드를 복사해서 프로젝트/공모전 개수만큼 추가하세요 -->
+      <div class="pcard reveal">
+        <div class="pcard__thumb">🏆</div>
+        <div class="pcard__body">
+          <span class="pcard__meta">20XX · 결과 (예: 대상)</span>
+          <h3 class="pcard__title">공모전/프로젝트 이름</h3>
+          <p class="pcard__desc">무엇을 했고 어떤 성과가 있었는지 간단히 적어주세요.</p>
+          <a href="#" class="pcard__link">자세히 보기 →</a>
+        </div>
+      </div>
+      <div class="pcard reveal">
+        <div class="pcard__thumb">💡</div>
+        <div class="pcard__body">
+          <span class="pcard__meta">20XX · 결과</span>
+          <h3 class="pcard__title">공모전/프로젝트 이름</h3>
+          <p class="pcard__desc">무엇을 했고 어떤 성과가 있었는지 간단히 적어주세요.</p>
+          <a href="#" class="pcard__link">자세히 보기 →</a>
+        </div>
+      </div>
+      <div class="pcard reveal">
+        <div class="pcard__thumb">🚀</div>
+        <div class="pcard__body">
+          <span class="pcard__meta">20XX · 결과</span>
+          <h3 class="pcard__title">공모전/프로젝트 이름</h3>
+          <p class="pcard__desc">무엇을 했고 어떤 성과가 있었는지 간단히 적어주세요.</p>
+          <a href="#" class="pcard__link">자세히 보기 →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT / FOOTER ================= -->
+<section class="contact" id="contact">
+  <div class="contact__inner reveal">
+    <p class="section__eyebrow">CONTACT</p>
+    <h2 class="contact__title">함께 이야기 나눠요</h2>
+    <a href="mailto:example@email.com" class="contact__email">example@email.com</a> <!-- TODO: 이메일 수정 -->
+    <div class="contact__links">
+      <a href="https://github.com/hye343" target="_blank" rel="noopener">GitHub</a>
+      <a href="#" target="_blank" rel="noopener">LinkedIn</a> <!-- TODO -->
+      <a href="#" target="_blank" rel="noopener">Instagram</a> <!-- TODO -->
+    </div>
+  </div>
+  <p class="footer__copy">© 2026 유혜린. Built with ❤ on GitHub Pages.</p> <!-- TODO -->
+</section>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
